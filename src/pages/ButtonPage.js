@@ -1,7 +1,7 @@
-import Button from "./components/Button";
+import Button from "../components/Button";
 import { FaPizzaSlice, FaBeer, FaGrinHearts, FaDizzy, FaTaxi } from "react-icons/fa";
 
-function App() {
+function ButtonPage() {
     const handleEvent = () => {
         console.log("event detected");
     }
@@ -41,4 +41,4 @@ function App() {
     )
 };
 
-export default App;
+export default ButtonPage;
