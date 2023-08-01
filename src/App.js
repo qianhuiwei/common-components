@@ -1,44 +1,27 @@
-import Button from "./components/Button";
-import { FaPizzaSlice, FaBeer, FaGrinHearts, FaDizzy, FaTaxi } from "react-icons/fa";
+import Accordion from "./components/Accordion";
 
 function App() {
-    const handleEvent = () => {
-        console.log("event detected");
-    }
+    const items = [
+          {
+            id: 'as',
+            label: 'Can I use React on a project?',
+            content: 'You can use React in any project you want.'
+          },
+          {
+            id: 'fgs',
+            label: 'Can I use Javascript on a project?',
+            content: 'You can use Javascript in any project you want.'
+          },
+          {
+            id: 'aaas',
+            label: 'Can I use CSS on a project?',
+            content: 'You can use CSS in any project you want.'
+          },
+    ];
     return (
-        <div className="m-5">
-            <div>
-                <Button primary rounded onClick={handleEvent}>
-                    <FaPizzaSlice />
-                    Primary
-                </Button>
-            </div>
-            <div>
-                <Button secondary onMouse onMouseEnter={handleEvent}>
-                    <FaBeer />
-                    Secondary
-                </Button>
-            </div>
-            <div>
-                <Button success rounded outline onMouseLeave={handleEvent}>
-                    <FaGrinHearts />
-                    Success
-                </Button>
-            </div>
-            <div>
-                <Button warning>
-                    <FaDizzy />
-                    Warning
-                </Button>
-            </div>
-            <div>
-                <Button danger outline>
-                    <FaTaxi />
-                    Danger
-                </Button>
-            </div>
-        </div>
-    )
+        
+        <Accordion items={items}/>
+    );
 };
 
 export default App;
