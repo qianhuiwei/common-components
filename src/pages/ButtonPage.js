@@ -3,7 +3,6 @@ import { FaPizzaSlice, FaBeer, FaGrinHearts, FaDizzy, FaTaxi } from "react-icons
 
 function ButtonPage() {
     const handleEvent = () => {
-        console.log("event detected");
     }
     return (
         <div className="m-5">
